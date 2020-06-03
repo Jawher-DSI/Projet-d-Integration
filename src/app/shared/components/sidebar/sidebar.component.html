@@ -1,0 +1,44 @@
+    <mat-nav-list>
+        <div class="profile-card">
+            <div class="profile">
+                <img src="https://cdn.dribbble.com/users/458522/screenshots/5906543/helping.jpg" alt="Profile Picture "/>
+                <h2>Hadj Hassine Jawher</h2>
+                <h3> hadjhassinejawher3@gmail.com</h3>
+            </div>
+        </div>
+
+        <div class="pages-card ">
+            <h2  matSubheader> Pages </h2>
+            <a mat-list-item [routerLink]="['/Acceuil']" routerLinkActive="list-item-active"> 
+                <mat-icon> dashboard </mat-icon>
+                Accueil 
+            </a>
+
+            <a mat-list-item [routerLink]="['/Books']" routerLinkActive="list-item-active" > 
+                <mat-icon> library_books </mat-icon>
+                Books 
+            </a>
+            <a mat-list-item [routerLink]="['/NewBooks']" routerLinkActive="list-item-active" > 
+                <mat-icon> add </mat-icon>
+                New Books 
+            </a>
+            <a mat-list-item [routerLink]="['/Notes']" routerLinkActive="list-item-active" > 
+                <mat-icon>description</mat-icon>
+                Notes 
+            </a>
+            <a mat-list-item [routerLink]="['/Qcm']" routerLinkActive="list-item-active" > 
+                <mat-icon>question_answer</mat-icon>
+                Qcm 
+            </a>
+        </div>
+
+        <div class="tools-card">
+            <h2 matSubheader> Outils </h2>
+            <a mat-list-item [routerLink]="['/Contacts']" routerLinkActive="list-item-active" > 
+                <mat-icon>contacts</mat-icon>
+                Contacts
+            </a>
+
+        </div>
+        </mat-nav-list>
+

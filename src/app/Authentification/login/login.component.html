@@ -1,0 +1,30 @@
+<div class="box"fxLayoutAlign="center center" fxFlexFill>
+<mat-card fxFlex="60" fxLayoutGap="10px" fxLayoutAlign="center center">
+    
+        <form fxLayoutAlign="center center" fxFlex="45" fxLayoutAlign="stretch" fxLayout="column">
+            <h2> Welcome Back </h2> <br>
+            <mat-form-field  appearance="outline">
+                <mat-label> E-Mail </mat-label>
+                <input matInput placeholder="Votre Adresse">
+            </mat-form-field><br>
+      
+            <mat-form-field  appearance="outline">
+                <mat-label> Mot de Passe </mat-label>
+                <input type="password" matInput placeholder="Votre Mot de Passe "/>
+            </mat-form-field><br>
+            
+            <div fxLayoutAlign="stretch" fxLayout="column">
+                <button mat-button color="primary" type="submit"> Se Connecter </button>
+            </div><br>
+        </form>
+
+        <div fxFlex fxLayoutAlign="center center" fxLayoutAlign="end" fxLayout="column">
+            <img src="https://cdn.dribbble.com/users/2440733/screenshots/11082410/media/881c5ba0e6e6d3a4e89955516358b78a.jpg" alt="Image de login "/>
+            <div fxFlex fxLayoutAlign="center center">
+                <h4> Vous n'avez pas de Compte ?<a [routerLink]="['/SignUp']" > Créer Un </a> </h4>
+            </div>
+        </div><br>
+
+
+</mat-card>
+</div>

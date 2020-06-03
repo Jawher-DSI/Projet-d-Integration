@@ -1,0 +1,26 @@
+img{
+    width: 560px;
+}
+
+mat-card{
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.box{
+  background-color: #e8e6e6;
+ // background-image: url('../../../assets/login-bk.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2{
+  text-align:center;
+  font-family: Apple Chancery, cursive;
+  font-weight: 800;
+}
+a{
+  color: darkblue;
+  font-weight: 500;
+}

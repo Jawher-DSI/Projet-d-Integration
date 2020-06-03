@@ -1,0 +1,39 @@
+<mat-toolbar color="basic">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()"> 
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span> Projet d'Integartion </span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end"> 
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-button  matTooltip="Notification">
+                        <mat-icon>notifications</mat-icon>
+                    </button>
+                </li>
+
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu"  matTooltip="Information est Paramétre">
+                        <mat-icon>person </mat-icon>
+                    </button>
+
+                    <mat-menu class="menu" #menu="matMenu">
+
+                        <button mat-menu-item  [routerLink]="['/Parametre']" routerLinkActive="router-link-active" >
+                            <mat-icon> settings </mat-icon>
+                            Paramétre
+
+                        </button>
+
+                        <button mat-menu-item (click)="opendialog()" >
+                            <mat-icon>exit_to_app</mat-icon>
+                            Déconnecter
+                        </button>
+                    
+                    </mat-menu>
+                    
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

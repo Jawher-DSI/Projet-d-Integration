@@ -1,0 +1,38 @@
+<div class="box"fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex="60" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <div fxFlex fxLayoutAlign="center center" fxLayoutAlign="start" fxLayout="column">
+            <img src="https://cdn.dribbble.com/users/2440733/screenshots/11082483/media/391a93a69b12d4be15a6ce1703608dbb.jpg" alt="Image de login "/>
+            <br><div fxFlex fxLayoutAlign="center center">
+                <h4> Avez-vous un Compte ? <a [routerLink]="['/Login']" > Connecter Vous </a> </h4>
+            </div>
+        </div>
+
+            <form fxLayoutAlign="center center" fxFlex="45" fxLayoutAlign="stretch" fxLayout="column">
+                <h2> Créer Votre Compte </h2> <br>
+                <mat-form-field appearance="outline">
+                    <mat-label> Nom </mat-label>
+                    <input matInput placeholder="Votre Nom">
+                </mat-form-field><br>
+          
+                <mat-form-field appearance="outline">
+                    <mat-label> Prenom </mat-label>
+                    <input matInput placeholder="Votre Prenom "/>
+                </mat-form-field><br>
+
+                <mat-form-field appearance="outline">
+                    <mat-label> E-mail </mat-label>
+                    <input matInput placeholder="Votre E-mail "/>
+                </mat-form-field><br>
+
+                <mat-form-field appearance="outline">
+                    <mat-label> Mot de Passe </mat-label>
+                    <input type="password" matInput placeholder="Votre Mot de Passe "/>
+                </mat-form-field><br>
+                
+                <div fxLayoutAlign="stretch" fxLayout="column">
+                    <button mat-button color="primary" type="submit"> Créer le Compte  </button>
+                </div><br>
+            </form>
+    
+    </mat-card>
+    </div>
